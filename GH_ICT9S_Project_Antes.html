@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+	<title>Unit Converter</title>
+	<link rel="stylesheet" href="project4.css" type="text/css">
+</head>
+<body>
+	<div class="col-xl-6" id="box">
+	</div>
+	<div id="text">
+	<h1>Unit Converter</h1>
+	</div>
+	<div id="equal">
+	<h1>=</h1>
+	</div>
+	<div id="text2">
+	<input type="number" id="id1" class="form-control-lg" placeholder="Millimeter">
+	<h2 id="id2"></h2><br><br>
+	<input type="button" id="button" class="btn btn-outline-light btn-lg" value="To Centimeters" onclick="cm()">
+	<input type="button" id="button" class="btn btn-outline-light btn-lg" value="To Meters" onclick="m()">
+	<input type="button" id="button" class="btn btn-outline-light btn-lg" value="To Kilometers" onclick="km()">
+	<div id="rec"></div>
+	<h6 id="id2"></h6>
+	</div>
+	<script>
+		function cm() {
+			var var1 = document.getElementById('id1').value;
+			var var2 = 10;//number
+			var answer = var1 / var2;
+			document.getElementById('id2').innerHTML = answer;
+		}
+		function m() {
+			var var3 = document.getElementById('id1').value;
+			var var4 = 1000;//number
+			var answer2 = var3 / var4;
+			document.getElementById('id2').innerHTML = answer2;
+		}
+		function km() {
+			var var3 = document.getElementById('id1').value;
+			var var4 = 1000000;//number
+			var answer2 = var3 / var4;
+			document.getElementById('id2').innerHTML = answer2;
+		}
+	</script>
+</body>
+</html>
